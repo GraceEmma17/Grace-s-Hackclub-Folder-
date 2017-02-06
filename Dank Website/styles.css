@@ -1,0 +1,15 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a { 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.who {
+    background:url("http://giphy.com/gifs/percolategalactic-marquee-fishtank-unicorn-guy-1iXXb9LrmxaXt0C4 ");
+}
