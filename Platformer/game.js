@@ -24,7 +24,7 @@ function setup() {
     numGroundSprites = width/GROUND_SPRITE_WIDTH+1; 
   
     for (var n = 0; n < numGroundSprites; n++) { 
-        var groundSprite = createSprite(n*3, height-3, GROUND_SPRITE_WIDTH, GROUND_SPRITE_HEIGHT); 
+        var groundSprite = createSprite(n*50, height-25, GROUND_SPRITE_WIDTH, GROUND_SPRITE_HEIGHT); 
         groundSprites.add(groundSprite); 
     } 
      
@@ -38,8 +38,8 @@ function draw() {
         background(0); 
         fill(255); 
         textAlign(CENTER); 
-        text("Your score was: " + score, camera.position.x,                                                                                                                                                                                                                                                                         camera.position.y - 20); 
-        text("U dead! Click anywhere to restart", camera.position.x, camera.position.y); 
+        text("Your score was: " + score, camera.position.x, camera.position.y - 20); 
+        text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y); 
     } else { 
         background(150, 200, 250); 
          
@@ -104,4 +104,4 @@ function mouseClicked() {
     score = 0; 
     isGameOver = false; 
   } 
-} 
+}
