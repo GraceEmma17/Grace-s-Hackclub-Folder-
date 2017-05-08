@@ -1,4 +1,3 @@
-
 var isGameOver; 
 var player; 
 var playerImage; 
@@ -8,7 +7,7 @@ var backgroundImage;
  
  
 function preload() { 
-  playerImage = loadImage("http://orig04.deviantart.net/b803/f/2014/292/9/f/belle_by_pussycat_puppy-d83epdg.gif"); 
+  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png"); 
   enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png"); 
   backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png"); 
 } 
@@ -17,7 +16,7 @@ function preload() {
 function setup() { 
   isGameOver = false; 
   createCanvas(256, 256); 
-  player = createSprite(width / 2, height - (playerImage.height /2), 50, 50); 
+  player = createSprite(width / 2, height - (playerImage.height / 2), 0, 0); 
   player.addImage(playerImage); 
   enemy = createSprite(width / 2, 0, 0, 0); 
   enemy.addImage(enemyImage); 
